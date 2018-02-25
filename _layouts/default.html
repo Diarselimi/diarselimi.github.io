@@ -33,7 +33,7 @@
   <script src="{{ "/" | relative_url  }}assets/js/simple-jekyll-search.min.js"></script>
   <script>hljs.initHighlightingOnLoad();</script>
   <script>
-    $('document').on('keydown', function(e){
+    $('body').keypress(function(e){
       console.log(e.keyCode);
       SimpleJekyllSearch({
         searchInput: document.getElementById('search-input'),
