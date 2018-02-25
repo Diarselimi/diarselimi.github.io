@@ -38,9 +38,9 @@
     });
     $('#search').keypress(function(e){
         $('.result').html('');
-        for(var i=0; i < data.length; i++) {
-          if(data[i].title.contains($(this).val()) || true) {
-            $('.result').append('<a href="#"><li></li>'+data[i].title+'</a>');
+        for(var i=0; i < posts.length; i++) {
+          if(posts[i].title.contains($(this).val()) || true) {
+            $('.result').append('<a href="#"><li></li>'+posts[i].title+'</a>');
           }
         }
     });
