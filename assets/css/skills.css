@@ -13,6 +13,8 @@
     border-radius: 20px;
     padding: 7px 16px;
     color: #fff;
-    font-family: "Lato";
+    font-size: .8rem;
     font-weight: bold;
+    display: inline-block;
+    margin: 5px 0;
 }
