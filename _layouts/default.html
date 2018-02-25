@@ -37,14 +37,25 @@
       posts = data;
     });
     
-    $('#search').keypress(function(e){
-      $('.search-content').show();
-        $('.result').html('');
+    var postContainer = $('#post-list');
+    var currentPosts = postContainer.html();
+    var keyword = "";
+    $('body').keypress(function(e){
+      if ((e.which >= 65 && e.which <= 90) || (e.which >= 48 && e.which <= 57)) {
+        keyword += String.fromCharCode(e.which);
+        postContainer.html('')
         for(var i=0; i < posts.length; i++) {
-          if(posts[i].title.indexOf($(this).val()) !== -1 || posts[i].title.indexOf($(this).val()) !== -1) {
-            $('.result').append('<a href="'+posts[i].url+'"><li>'+posts[i].title+'</li></a>');
+          if(posts[i].title.indexOf(keyword) !== -1 || posts[i].title.indexOf(keyword) !== -1) {
+            var content = postContainer.data('prototype');
+            content = content.replace(/__url__/g, posts[i].url);
+            content = content.replace(/__title__/g, posts[i].title);
+            content = content.replace(/__description__/g, posts[i].description);
+            postContainer.append(content);
           }
         }
+      }
+      postContainer.html(currentPosts);
+      keyword = "";
     });
   </script>
   <script>
