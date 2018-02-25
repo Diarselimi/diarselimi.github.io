@@ -35,12 +35,15 @@
   <script>
     var keyword = "";
     $('body').keypress(function(e){
-      console.log(e.which);
       if(e.which > 47 && e.which <= 121) {
         keyword += String.fromCharCode(e.which);
       }
-      console.log(keyword);
       e.preventDefault();
+      SimpleJekyllSearch({
+        searchInput: keyword,
+        resultsContainer: document.getElementById('results-container'),
+        json: '/search.json'
+      });
     });
   </script>
   <script>
