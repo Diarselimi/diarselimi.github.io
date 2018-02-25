@@ -32,6 +32,11 @@
     
 }
 
+.search-content a, .search-content a:clicked {
+    color: #fff;
+    text-decoration: none;
+}
+
 
 ul, ul li {
     list-style: none;
