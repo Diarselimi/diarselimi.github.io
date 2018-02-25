@@ -16,5 +16,4 @@ I'm flexible with my working hours and am happy to work closely with any existin
 I look forward to hearing from you!
 
 {% include cv.html %}
-
 {% include footer.html %}
