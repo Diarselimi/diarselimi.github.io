@@ -33,13 +33,13 @@
   <script src="{{ "/" | relative_url  }}assets/js/simple-jekyll-search.min.js"></script>
   <script>hljs.initHighlightingOnLoad();</script>
   <script>
+    var keyword = "";
     $('body').keypress(function(e){
-      console.log(e.keyCode);
-      SimpleJekyllSearch({
-        searchInput: document.getElementById('search-input'),
-        resultsContainer: document.getElementById('results-container'),
-        json: '/search.json'
-      });
+      console.log(e.which);
+      if(e.which > 47 || e.which < 90) {
+        keyword += String.fromCharCode(e.which);
+      }
+      console.log(keyword);
     });
   </script>
   <script>
