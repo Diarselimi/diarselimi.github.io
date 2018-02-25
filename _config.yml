@@ -18,7 +18,7 @@ disqus_shortname: 'your-disqus-shortname'
 url:            'http://diarselimi.github.io'
 author:         'Diar Selimi'
 authorTwitter:  'diarselimi92'
-avatar:         'https://s.gravatar.com/avatar/8c03827422592572104af48f0fecb627?s=80'
+gravatar:         'https://s.gravatar.com/avatar/8c03827422592572104af48f0fecb627?s=80'
 
 permalink:       /:year/:title/
 
