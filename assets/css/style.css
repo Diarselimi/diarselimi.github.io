@@ -121,13 +121,13 @@ nav.main-nav {
 }
 
 nav.main-nav .left {
-	width: 49%;
+	width: 20%;
 	display: inline-block;
 	font-size: 1.5rem;
 }
 
 nav.main-nav .right {
-	width: 49%;
+	width: 78%;
     display: inline-block;
     text-align: right;
 }
