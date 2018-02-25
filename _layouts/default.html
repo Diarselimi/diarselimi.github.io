@@ -40,9 +40,13 @@
       }
       e.preventDefault();
       SimpleJekyllSearch({
-        searchInput: keyword,
-        resultsContainer: document.getElementById('results-container'),
-        json: '/search.json'
+        searchInput: "<input value='"+keyword+"'>",
+        resultsContainer: document.getElementsByTagName('body'),
+        json: '{{site.baseurl}}/search.json',
+        searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a></li>',
+        noResultsText: 'No results found',
+        fuzzy: false,
+        exclude: ['Welcome']
       });
     });
   </script>
