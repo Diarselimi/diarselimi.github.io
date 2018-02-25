@@ -39,14 +39,8 @@
         keyword += String.fromCharCode(e.which);
       }
       e.preventDefault();
-      SimpleJekyllSearch({
-        searchInput: $("<input value='"+keyword+"'>"),
-        resultsContainer: document.getElementsByTagName('body'),
-        json: '{{site.baseurl}}/search.json',
-        searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a></li>',
-        noResultsText: 'No results found',
-        fuzzy: false,
-        exclude: ['Welcome']
+      $.getJSON('{{site.baseurl}}/search.json', function(data){
+        console.log(data);
       });
     });
   </script>
