@@ -121,11 +121,14 @@ nav.main-nav {
 }
 
 nav.main-nav .left {
-	width: 50%;
+	width: 49%;
+	display: inline-block;
 }
 
 nav.main-nav .right {
 	width: 50%;
+    display: inline-block;
+    text-align: right;
 }
 
 nav.main-nav a {
@@ -147,9 +150,7 @@ nav.main-nav a.cta {
 
 nav.main-nav a.cta-social {
 	border: 1px solid #5badf0;
-	border-radius: 50%;
     color: #5badf0;
-    margin-left: 12px;
 }
 
 #wrapper {
