@@ -35,11 +35,11 @@
   <script>
     var keyword = "";
     $('body').keypress(function(e){
-      console.log(e.which);
-      if(e.which > 47 || e.which < 90) {
+      if(e.which > 47 && e.which < 90) {
         keyword += String.fromCharCode(e.which);
       }
       console.log(keyword);
+      e.preventDefault();
     });
   </script>
   <script>
