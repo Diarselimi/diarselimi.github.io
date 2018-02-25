@@ -138,6 +138,13 @@ nav.main-nav a.cta {
 	margin-left: 12px;
 }
 
+nav.main-nav a.cta-social {
+	border: 1px solid #5badf0;
+	border-radius: 50%;
+    color: #5badf0;
+    margin-left: 12px;
+}
+
 #wrapper {
   max-width: 600px;
   margin: 0 auto;

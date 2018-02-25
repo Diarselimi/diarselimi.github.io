@@ -1,4 +1,8 @@
 <nav class="main-nav">
+    <div class="left">
+        <a class="cta-social" href="https://www.linkedin.com/in/{{ site.authorLinkedin }}"><i class="fa fa-linkedin"></i></a>
+        <a class="cta-social" href="https://github.com/{{ site.authorGithub }}"><i class="fa fa-github-square"></i></a>
+    </div>
     {% if page.url != "/" %}
         <a href="{{ "/" | relative_url  }}"> <span class="arrow">←</span> Home </a>
     {% endif %}
