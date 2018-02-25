@@ -36,6 +36,7 @@
     $.getJSON('{{site.baseurl}}/search.json', function(data){
       posts = data;
     });
+    
     $('#search').keypress(function(e){
       $('.search-content').show();
         $('.result').html('');
