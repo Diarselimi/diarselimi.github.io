@@ -41,6 +41,7 @@
     var currentPosts = postContainer.html();
     var keyword = "";
     $('body').keypress(function(e){
+      e.preventDefault();
       if ((e.which >= 65 && e.which <= 90) || (e.which >= 48 && e.which <= 57)) {
         keyword += String.fromCharCode(e.which);
         postContainer.html('')
