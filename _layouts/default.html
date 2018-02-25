@@ -37,6 +37,7 @@
       posts = data;
     });
     $('#search').keypress(function(e){
+      $('.search-content').show();
         $('.result').html('');
         for(var i=0; i < posts.length; i++) {
           if(posts[i].title.indexOf($(this).val()) !== -1 || posts[i].title.indexOf($(this).val()) !== -1) {
