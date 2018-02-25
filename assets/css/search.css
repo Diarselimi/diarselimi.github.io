@@ -1,6 +1,6 @@
 
 .search-content {
-    position: absolute;
+    position: fixed;
     background: #913D88;
     font: 13px monospace;
     color: #FFFFFF;
@@ -8,24 +8,34 @@
     top: 0;
     width: 100%;
     height: 100%;
-
+    z-index: 1;
 }
 
 .search-content #search {
     width: 90%;
-    margin: 10px 20px;
+    margin: 10px 5%;
     border: 0;
     border-bottom: 2px solid #fff;
+    padding: 10px;
+    background-color: transparent;
+    color: #fff;
+    font-size: 1.2rem;
+    text-align: center;
 }
 
 .search-content .result {
-    width: 100%;
+    width: 90%;
     height: 100%;
+    margin: 10px 5%;
     color: #fff;
+    text-align: center;
+    
 }
+
 
 ul, ul li {
     list-style: none;
     font-size: 1.3rem;
+    border-bottom: 1px solid #fff;
 }
 

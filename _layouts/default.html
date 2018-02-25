@@ -31,17 +31,18 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
   <script src="{{ "/" | relative_url  }}assets/js/main.js"></script>
   <script src="{{ "/" | relative_url  }}assets/js/highlight.js"></script>
-  <script>hljs.initHighlightingOnLoad();</script>
-  <script>
-    var keyword = "";
-    $('body').keypress(function(e){
-      if(e.which > 47 && e.which <= 121) {
-        keyword += String.fromCharCode(e.which);
-      }
-      e.preventDefault();
-      $.getJSON('{{site.baseurl}}/search.json', function(data){
-        console.log(data);
-      });
+  <script>hljs.initHighlightingOnLoad();</script><script>
+    var posts;
+    $.getJSON('{{site.baseurl}}/search.json', function(data){
+      posts = data;
+    });
+    $('#search').keypress(function(e){
+        $('.result').html('');
+        for(var i=0; i < data.length; i++) {
+          if(data[i].title.contains($(this).val()) || true) {
+            $('.result').append('<a href="#"><li></li>'+data[i].title+'</a>');
+          }
+        }
     });
   </script>
   <script>
