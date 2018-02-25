@@ -9,9 +9,10 @@
 }
 
 .panel .tag{
-   background-color: #495057;
-   border-radius: 5px;
-   padding: 4px 7px;
-   color: #fff;
-   display: inline-block;
+    background-color: #495057;
+    border-radius: 20px;
+    padding: 7px 16px;
+    color: #fff;
+    font-family: "Lato";
+    font-weight: bold;
 }
