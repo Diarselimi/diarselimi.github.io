@@ -123,6 +123,7 @@ nav.main-nav {
 nav.main-nav .left {
 	width: 49%;
 	display: inline-block;
+	font-size: 1.5rem;
 }
 
 nav.main-nav .right {
