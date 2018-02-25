@@ -7,6 +7,7 @@ profile: false
     {
     
       "title"    : "{{ post.title | escape }}",
+      "content"  : "{{ post.description }}",
       "url"      : "{{ site.baseurl }}{{ post.url }}",
       "category" : "{{ post.category }}",
       "tags"     : "{{ post.tags | join: ', ' }}",
