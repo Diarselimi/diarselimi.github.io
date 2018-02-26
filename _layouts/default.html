@@ -64,7 +64,7 @@
           search.focus();
         }
         
-        if(e.which == 27 && searchIsOpen) {
+        if(e.keyCode == 27 && searchIsOpen) {
           search.fadeOut(100);
           postContainer.html(currentPosts);
           search.val('');
