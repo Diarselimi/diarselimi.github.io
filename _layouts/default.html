@@ -36,27 +36,15 @@
     $.getJSON('{{site.baseurl}}/search.json', function(data){
       posts = data;
     });
-    var regex = RegExp('[a-zA-Z\s0-9]+','g');
-    var m;
-  
-    var keyword = "";
-    
+    var searchIsOpen = false;
     $(document).ready(function(){
       var postContainer = $('#post-list');
       var search = $('#search');
       var currentPosts = postContainer.html();
-      
-      $('body').keypress(function(e){
-        
-        var char = String.fromCharCode(e.which);
-        if ((m = regex.exec(char)) !== null) {
-          keyword = keyword.concat(String.fromCharCode(e.which));
-          
-          search.fadeIn(100);
-          search.val(keyword);
-          search.focus();
 
-          postContainer.html('')
+      search.on('input change', function(){
+        keyword = $(this).val();
+        postContainer.html('')
           for(var i=0; i < posts.length; i++) {
             if(posts[i].title.indexOf(keyword) !== -1 || posts[i].title.indexOf(keyword) !== -1) {
               var content = postContainer.data('prototype');
@@ -66,11 +54,24 @@
               postContainer.append(content);
             }
           }
-        } else {
+      });
+      
+      $('body').keypress(function(e){
+        
+        var char = String.fromCharCode(e.which);
+        if (char == "s" && !searchIsOpen) {
+          
+          search.fadeIn(100);
+          search.val(keyword);
+          search.focus();
+
+          
+        }
+        
+        if(e.which == 27 && searchIsOpen) {
           search.fadeOut(100);
           postContainer.html(currentPosts);
-          keyword = "";
-
+          search.val('');
         }
       });
     });
