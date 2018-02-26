@@ -56,10 +56,10 @@
             postContainer.append(content);
           }
         }
-        return false;
+      } else {
+        postContainer.html(currentPosts);
+        keyword = "";
       }
-      postContainer.html(currentPosts);
-      keyword = "";
     });
   </script>
   <script>
