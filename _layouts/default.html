@@ -44,6 +44,8 @@
     $('body').keypress(function(e){
       e.preventDefault();
       var char = String.fromCharCode(e.which);
+      console.log(regex.exec(char));
+      console.log(char);
       if (regex.exec(char) !== null) {
         keyword += char;
         postContainer.html('')
