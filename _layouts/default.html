@@ -46,9 +46,9 @@
       var currentPosts = postContainer.html();
       
       $('body').keypress(function(e){
-        e.preventDefault();
+        
         var char = String.fromCharCode(e.which);
-        if (regex.exec(char)) {
+        if ((m = regex.exec(char)) !== null) {
           keyword = keyword.concat(String.fromCharCode(e.which));
           
           search.fadeIn(100);
