@@ -13,3 +13,8 @@
     border-radius: 5px;
     border: 0;
 }
+
+input:focus {
+    border:0;
+    outline: 0;
+}
