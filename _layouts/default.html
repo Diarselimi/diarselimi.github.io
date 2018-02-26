@@ -58,7 +58,7 @@
       
       $('body').keydown(function(e){
         
-        var char = String.fromCharCode(e.which);
+        var char = String.fromCharCode(e.keyCode);
         if (char == "s" && !searchIsOpen) {
           search.fadeIn(100);
           search.focus();
