@@ -1,5 +1,6 @@
 #search {
-    position: fixed;
+    position: absolute;
+    z-index: 2;
     top: 100px;
     width: 40%;
     left: 30%;

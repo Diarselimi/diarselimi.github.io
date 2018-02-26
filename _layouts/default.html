@@ -48,7 +48,7 @@
       $('body').keypress(function(e){
         e.preventDefault();
         var char = String.fromCharCode(e.which);
-        if (regex.exec(char) !== null) {
+        if (regex.exec(char).length) {
           keyword = keyword.concat(String.fromCharCode(e.which));
           
           search.fadeIn(100);
