@@ -40,10 +40,12 @@
     var postContainer = $('#post-list');
     var currentPosts = postContainer.html();
     var keyword = "";
+    var regex = new new RegExp("/[a-zA-Z\s0-9]+", "g");
     $('body').keypress(function(e){
       e.preventDefault();
-      if ((e.which >= 65 && e.which <= 90) || (e.which >= 48 && e.which <= 57)) {
-        keyword += String.fromCharCode(e.which);
+      var char = String.fromCharCode(e.which);
+      if (regex.exec(char) !== null) {
+        keyword += char;
         postContainer.html('')
         for(var i=0; i < posts.length; i++) {
           if(posts[i].title.indexOf(keyword) !== -1 || posts[i].title.indexOf(keyword) !== -1) {
