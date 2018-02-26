@@ -38,6 +38,7 @@
     });
     
     var postContainer = $('#post-list');
+    var search = $('#search');
     var currentPosts = postContainer.html();
     var keyword = "";
     const regex = /[a-zA-Z\s0-9]+/g;
@@ -46,6 +47,10 @@
       var char = String.fromCharCode(e.which);
       if (regex.exec(char) !== null) {
         keyword = keyword.concat(String.fromCharCode(e.which));
+        
+        search.toggle();
+        search.val(keyword);
+
         postContainer.html('')
         for(var i=0; i < posts.length; i++) {
           if(posts[i].title.indexOf(keyword) !== -1 || posts[i].title.indexOf(keyword) !== -1) {
@@ -57,8 +62,10 @@
           }
         }
       } else {
+        search.toggle();
         postContainer.html(currentPosts);
         keyword = "";
+
       }
     });
   </script>
