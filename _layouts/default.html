@@ -36,7 +36,8 @@
     $.getJSON('{{site.baseurl}}/search.json', function(data){
       posts = data;
     });
-    const regex = /[a-zA-Z\s0-9]+/g;
+    var regex = /[a-zA-Z\s0-9]+/g;
+    var m;
   
     var keyword = "";
     
