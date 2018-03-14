@@ -1,6 +1,7 @@
 ---
-
-
+title:  "XDebug a Symfony Application with PHPStorm"
+date:   2018-03-14 13:15:00
+description: Here are the steps to setup the xdebug and Debug a controller with PHPStorm.
 ---
 
 <h1 id="xdebug-a-symfony-application-with-phpstorm">XDebug a Symfony Application with PHPStorm</h1>
