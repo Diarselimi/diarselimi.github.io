@@ -15,7 +15,7 @@ disqus: false
 disqus_shortname: 'your-disqus-shortname'
 
 # Details for the RSS feed generator
-url:            'http://diarselimi.github.io'
+url:            'https://diarselimi.github.io'
 author:         'Diar Selimi'
 authorTwitter:  'diarselimi92'
 authorLinkedin: 'diarselimi'
