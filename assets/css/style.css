@@ -71,7 +71,7 @@ h2 {
 
 .profile #wrapper {
 	padding: 100px 40px 0px;
-	max-width: 80%;
+	max-width: 600px;
 	margin: 0 auto;
 }
 
@@ -155,7 +155,7 @@ nav.main-nav a.cta-social {
 }
 
 #wrapper {
-  max-width: 600px;
+  max-width: 80%;
   margin: 0 auto;
   padding: 60px 40px 100px 40px;
 }
