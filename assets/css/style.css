@@ -624,6 +624,10 @@ h2.month {
   background: #4fafed;
 }
 
+#sharing a.linkein {
+	background: #0077b5;
+}
+
 #sharing a {
   font-size: 20px;
   font-size: 13px;
