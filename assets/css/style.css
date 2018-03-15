@@ -47,6 +47,19 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 margin-bottom: 20px;
 }
 
+p code {
+	overflow: auto;
+    border-radius: 3px;
+    background: #272b2d;
+    font-family: 'Source Code Pro',Menlo,monospace;
+    font-size: 13px;
+    line-height: 1.5em;
+    font-weight: 500;
+	color: #d0d4d7;
+	white-space: pre-wrap;
+	padding: 5px;
+}
+
 /* Base */
 html, body { height: 100%; }
 
