@@ -5,7 +5,7 @@ description: Here are the steps to setup the xdebug and Debug a controller with 
 tags: Synfony, xdebug, php, debug, controller
 ---
 
-<h1 id="xdebug-a-symfony-application-with-phpstorm">XDebug a Symfony Application with PHPStorm</h1>
+
 <blockquote>
 <p>Here are the steps to setup the xdebug and Debug a controller with PHPStorm</p>
 </blockquote>
@@ -38,7 +38,7 @@ After you click the <strong>…</strong> button in the preferences window you sh
 <h6 id="this-should-work-for-also-for-laravel-framework.">This should work for also for Laravel Framework.</h6>
 <p>First we have to configure the type of project we are trying to debug.<br>
 Navigate to <strong>Run&gt;Edit Configurations</strong> and you will see this window.<br>
-<img src="https://lh3.googleusercontent.com/fnE72wX4HaXrnutVVYfPyC6Un2z4jIbF65gyv0xEfRso894PJlwlUidkOrwOdRQhhBH_f6ois7Hyiw=s700" alt="enter image description here" title="Edit Configurations"><br>
+<img src="https://lh3.googleusercontent.com/fnE72wX4HaXrnutVVYfPyC6Un2z4jIbF65gyv0xEfRso894PJlwlUidkOrwOdRQhhBH_f6ois7Hyiw=s700" width="500px" alt="enter image description here" title="Edit Configurations"><br>
 After you click on the <strong>+</strong> icon you have to select <strong>PHP Web Page</strong> or <strong>PHP Web Application</strong> depends on your PHPStorm version.<br>
 You have to click <strong>…</strong> to the right of the Server: and configure the server as you wan’t.<br>
 You have to choose the Absolute path on the server as I did in the picture below, you can do this by clicking the checkbox <strong>Use path mappings</strong><br>
