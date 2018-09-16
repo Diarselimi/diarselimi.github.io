@@ -66,6 +66,7 @@ In April 2018 GO was [19th in the TIOBE index and now it's 16th](https://www.tio
     }
     ```
 -   Arrays and Slices
+    
     ```go
     // An array has a fixed size which you specify in the declaration  
     // you cannot add elements in an array like this arr1[5] = 9 as this will throw an error  
