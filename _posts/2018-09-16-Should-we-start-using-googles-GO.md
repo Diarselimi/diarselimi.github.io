@@ -1,6 +1,3 @@
-﻿
-## Should I start using GO!
-
 > “Go will be the server language of the future.” — Tobias Lütke, Shopify
 
 Go runs directly on the underlying hardware. Go is not executed on VMs which means that our code is directly compiled to a binary to be run on our processor.
@@ -81,9 +78,9 @@ In April 2018 GO was [19th in the TIOBE index and now it's 16th](https://www.tio
 -   Maps in GO
     ```go
     keyList = make(map[int]string) // this will make a map list with int as key and string value
-    
+    ```
 -   In GO you can make a function or variable accessible from outside just by capitalizing the name.
-    
+    ```go
     //this function is accesable from outside  
     func GetValue() int {  
      return 12  
